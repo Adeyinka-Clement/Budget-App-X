@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clement</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- <link rel="stylesheet" href="js/bootstrap.js"> -->
@@ -14,11 +14,11 @@
         <div class="container-fluid col-12 col-lg-5  whole rounded-4" id="whole">
             <div class="row py-5">
                 <div class="col-12">
-                    this is a budget app inspired by clement adeyinka Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ab nobis enim autem suscipit consectetur placeat facilis, ducimus aut, sit hic. Non aliquam deleniti adipisci, autem sapiente officiis nostrum numquam?
+                    A budget app developed by <b>Clement Adeyinka,</b>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ab nobis enim autem suscipit consectetur placeat facilis, ducimus aut, sit hic. Non aliquam deleniti kiiiijjoigum numquam? <b>it ain't complete sha</b>
                 </div>
-                <div class="col-12">
+                <div class="col-10">
                     <center>
-                        <button type="button" class="btn btn-primary mx-auto w-50 mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="get()" id="geth">get started</button>
+                        <button type="button" class="btn btn-primary mx-auto w-50 mt-5 ms-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="geth">get started</button>
                         
                         </center> 
                 </div>
@@ -32,13 +32,24 @@
 
 
 
-    <div class="container-fluid col-12 col-lg-5   rounded-4 inputs">
-        <div class="row">
-            <div class="col-4 ">
-                <h2 id="output"></h2>
+    <div class="container-fluid col-12 col-lg-5 rounded-4 inputs" id="contain">
+        <div class="row pt-3">
+            <div class="col-lg col-6 pb-4">
+                <h4 id="output"></h4>
             </div>
-            <div class="col-4  p-5"></div>
-            <div class="col-4 bg-dark p-5"></div>
+            <!-- <div class="col-lg col-0 "></div> -->
+            <div class="col-lg col-6 pb-4">
+              <h5 id="amountD"></h5>
+            </div>
+            <div class="form-floating">
+              <input class="form-control mb-2" placeholder="" type="text" name="" id="itemName" >
+              <label for="itemName">input the item name</label>
+          </div>
+          <div class="form-floating">
+            <input class="form-control mb-3" placeholder="" type="text" name="" id="itemPrice" >
+            <label for="itemPrice">input the item price</label>
+        </div>
+        <button class="w-50 btn mx-auto btn-dark" onclick="add()">Add</button>
         </div>
     </div>
 
@@ -82,22 +93,22 @@
     <div class="modal-dialog">
       <div class="modal-content modalr">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Welcome</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <div class="form-floating">
-                <input class="form-control mb-4" placeholder="" type="text" name="" id="inputField">
+                <input class="form-control mb-4" placeholder="" type="text" name="" id="nameI" required>
                 <label for="name">input your name</label>
             </div>
             <div class="form-floating">
-                <input class="form-control" placeholder="" type="text" name="" id="money">
+                <input class="form-control" placeholder="" type="text" name="" id="money" required>
                 <label for="money">available fund</label>
             </div>
         </div>
         <div class="modal-footer">
           <button  class="btn btn-secondary" data-bs-dismiss="modal" onclick="close()">Close</button>
-          <button type="button" class="btn btn-primary" onclick="next()" data-bs-dismiss="modal">Next</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="modalButton">Next</button>
         </div>
       </div>
     </div>

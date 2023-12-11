@@ -10,15 +10,29 @@ function close(){
     
 }
 
-function next(){
-    inputs.style.display = "block"
+document.addEventListener("DOMContentLoaded", function() {
+    var modalButton = document.getElementById('modalButton');
+    modalButton.addEventListener('click', function() {
+        if (nameI.value === "" || money.value === "") {
+            alert("input the .....")
+        }
+        else {
+            contain.style.display = "block"
+        output.innerHTML = "Dear " + nameI.value + ","
+        amountD.innerHTML = "aval bal = " + "$" + money.value
+        whole.style.display = "none"
+        }
+        
+    
+     
+    });
+  });
+  function add() {
+    
+    if (itemName.value === "" || itemPrice.value == "");{
+        alert("input the .....")
+        
 
-    const input = document.getElementById('inputField');
-  
-    const inputValue = inputField.value;
-    
-    const outputElement = document.getElementById('output');
-    
-    outputElement.textContent = 'Input value: ' + inputValue;
-}
+    }
+  }
 

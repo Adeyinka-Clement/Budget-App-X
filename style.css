@@ -51,22 +51,29 @@ body{
     
 }
 .inputs{
-    margin-top: 400px !important;
+    margin-top: 100px !important;
     position: fixed;
     z-index: 99999999999999;
-    margin-left: 362px !important;
+    margin-left: 360px !important;
+    display: none;
+    background: rgba(213, 221, 233, 0.1) !important; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+
 
 }
-.inputs{
-    /* display: none; */
+input:focus{
+    box-shadow: none !important;
+    background-color: white !important;
 }
+
 @media screen and (max-width: 475px) {
     .whole{
         margin-left: 0px !important;
         margin-top: 60px !important;
     }
     .inputs{
-        margin-top: 390px !important;
+        margin-top: 100px !important;
         margin-left: 0px !important;
 
     }
