@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.caro{
+    height: 100% !important;
+    width: 100% !important;
+    /* margin-top: -370px !important; */
+
+}
+.img1{
+    height: 100vh !important;
+    /* width: 100% !important; */
+}
+.img2{
+    height: 100vh !important;
+    /* width: 100% !important; */
+}
+.img3{
+    height: 100vh !important;
+    /* width: 100% !important; */
+}
+.whole{
+    position: fixed;
+    z-index: 999999999999999999999999999999999 !important;
+    /* display: none; */
+    background: rgb(2, 53, 129, 0.1); /* This is the color F5A454 with 10% opacity */
+    backdrop-filter: blur(10px); /* This will blur the background */
+    -webkit-backdrop-filter: blur(10px);
+    margin-left: 362px !important;
+    /* align-items: center !important; */
+    margin-top: 70px !important;
+    
+}
+.modalr{
+    background: rgba(213, 221, 233, 0.1) !important; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: 70px !important;
+    position: fixed;
+
+    
+}
+.modal1{
+    position: fixed;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999 !important;
+    
+}
+.inputs{
+    margin-top: 400px !important;
+    position: fixed;
+    z-index: 99999999999999;
+    margin-left: 362px !important;
+
+}
+.inputs{
+    /* display: none; */
+}
+@media screen and (max-width: 475px) {
+    .whole{
+        margin-left: 0px !important;
+        margin-top: 60px !important;
+    }
+    .inputs{
+        margin-top: 390px !important;
+        margin-left: 0px !important;
+
+    }
+}
