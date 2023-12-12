@@ -77,4 +77,7 @@ input:focus{
         margin-left: 0px !important;
 
     }
+    body{
+        overflow-x: hidden !important;
+    }
 }
